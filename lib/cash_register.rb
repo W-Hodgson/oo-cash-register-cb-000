@@ -20,7 +20,7 @@ class CashRegister
   def apply_discount
     if @discount > 0
       percentage_to_charge = 100 - @discount.to_f
-      
+
       @total = @total.to_f * ((100 - @discount.to_f ) / 100)
       binding.pry
     else
