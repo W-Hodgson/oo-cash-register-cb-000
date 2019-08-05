@@ -17,7 +17,7 @@ class CashRegister
 
   def apply_discount
     if @discount > 0
-      @total = @total * (100 - @discount)
+      @total = @total - @discount
     else
       "There is no discount to apply."
     end
