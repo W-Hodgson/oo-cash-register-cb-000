@@ -31,7 +31,7 @@ class CashRegister
   def void_last_transaction
     last_item = @items_with_prices.last
     @total = @total - last_item[:price]
-    if @items.empty?
+    if @items_with_prices.empty?
       @total = 0
     end
   end
