@@ -30,6 +30,7 @@ class CashRegister
 
   def void_last_transaction
     last_item = @items_with_prices.last
+    binding.pry
   end
 
 end
