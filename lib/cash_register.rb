@@ -7,7 +7,7 @@ class CashRegister
     @items = []
   end
 
-  def add_item(title, price)
+  def add_item(title, price, quantity=0)
     @items << title
     @total += price
   end
