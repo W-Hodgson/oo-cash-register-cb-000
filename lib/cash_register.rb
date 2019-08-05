@@ -11,7 +11,7 @@ class CashRegister
     @quantity = quantity
     @items << title
     charge_total = quantity * price
-    @total += price
+    @total += charge_total
     @total
   end
 
